@@ -196,7 +196,14 @@ io.on('connection', function (socket) {
             console.log('setting click interval');
             state = data;
             handlerCmd = setInterval(function () {
-                robot.keyToggle('command');
+                let state;
+                if(state === 'down'){
+                    robot.keyToggle('command','up');
+                    state = 'up';
+                } else {
+                    robot.keyToggle('command','down');
+                    state = 'down';
+                }
             }, 275);
         }
 
