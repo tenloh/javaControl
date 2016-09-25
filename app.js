@@ -47,9 +47,13 @@ io.on('connection', function (socket) {
 
     socket.on('keypress', function(keyCode){
         let char;
-        char = String.fromCharCode(keyCode).toLowerCase();
-        console.log('char', char);
-        robot.keyTap(char);
+        try{
+            char = String.fromCharCode(keyCode).toLowerCase();
+            console.log('char', char);
+            if(!char) return;
+            robot.keyTap(char);
+        } catch(e) {
+        }
     })
 
     socket.on('move mouse down', function (data) {

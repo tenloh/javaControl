@@ -10,7 +10,7 @@ $(document).ready(function () {
     //     return false;
     // });
 
-    $('#m').bind('keypress', function(event){
+    $('#m').bind('keydown', function(event){
         // socket.emit('keypress', $('#m').val());
         socket.emit('keypress', event.keyCode);
         $('#m').val('');
