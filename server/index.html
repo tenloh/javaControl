@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=0" />
+    <title>JavaScript Remote Control</title>
+    <link href="/jquery-mobile/dist/jquery.mobile.css" rel="stylesheet">
+    <link href="/css/stylesheet.css" rel="stylesheet">
+    <!--<link href="/bootstrap/dist/bootstrap.min.css" rel="stylesheet">-->
+</head>
+
+<body class="clearfix">
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/jquery-mobile/dist/jquery.mobile.js"></script>
+    <div class="container">
+        <button class='ui-btn button-class' data-theme="b" id='up'>
+            <img src="/icons_for_ten/up.png">
+        </button>
+        <button class='ui-btn button-class' data-theme="b" id='left'>
+            <img src="/icons_for_ten/left.png">
+        </button>
+        <button class='ui-btn button-class' data-theme="b" id='right'>
+            <img src="/icons_for_ten/right.png">
+        </button>
+        <button class='ui-btn button-class' data-theme="b" id='down'>
+            <img src="/icons_for_ten/down.png">
+        </button>
+        <button class='btn button-class btn-info' id='click'>Click</button>
+        <button class='btn button-class btn-info' id='pDown'>MDown</button>
+        <button class='btn button-class btn-info' id='pUp'>MUp</button>
+        <button class='btn button-class btn-info' id='enter'>Enter</button>
+        <button class='btn button-class btn-info' id='delete'>Delete</button>
+        <button class='btn button-class btn-info' id='cmd'>Cmd</button>
+        <form action="">
+            <input id="m" autocomplete="off" />
+            <button>Send</button>
+        </form>
+    </div>
+    <script src="/angular/angular.js" defer></script>
+    <script src="/app.js" defer></script>
+    <script src="/js/socket.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+        .clearfix { display: inline-block; }
+        /* start commented backslash hack \*/
+        * html .clearfix { height: 1%; }
+        .clearfix { display: block; }
+        /* close commented backslash hack */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font: 13px Helvetica, Arial;
+        }
+        
+        form {
+            background: #000;
+            padding: 3px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        form input {
+            border: 0;
+            padding: 10px;
+            width: 90%;
+            margin-right: .5%;
+            height: 200px;
+        }
+        
+        form button {
+            width: 9%;
+            background: rgb(130, 224, 255);
+            border: none;
+            padding: 10px;
+        }
+        .button-class {
+            font-size: 75px;
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            font-size: 75px;
+        }
+
+        #down,#up,#click,#left,#right,#pUp,#pDown,#enter,#cmd,#ctrl,#delete {
+            height: 225px;
+        }
+
+        #left,#right{
+            width: 49.75%;
+            display: inline-block;
+        }
+
+        #click,#pUp,#pDown,#enter,#cmd,#ctrl,#delete {
+            width: 32.75%;
+            display: inline-block;
+        }
+        input[id="m"]{
+            font-size:72px;
+        }
+        img {
+            height: 100px;
+            size: 100px;
+        }   
+    

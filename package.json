@@ -1,0 +1,26 @@
+{
+  "name": "Stackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e js,html,css app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bluebird": "^3.4.6",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "hypnotic": "^1.0.0",
+    "jquery-mobile": "^1.4.1",
+    "nodemon": "^1.10.2",
+    "request": "^2.75.0",
+    "robotjs": "^0.4.4",
+    "socket.io": "^1.4.8"
+  }
+}
